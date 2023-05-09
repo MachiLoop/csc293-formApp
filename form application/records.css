@@ -1,0 +1,100 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #90ee90, #9198e5);
+}
+
+.card {
+  padding-inline: 1rem;
+  margin-block: 40px;
+  /* overflow: scroll; */
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+#search {
+  outline: none;
+  border: none;
+  padding: 4px 8px;
+  min-width: 240px;
+}
+
+.card-body {
+  overflow-x: auto;
+}
+
+.card-body table {
+  width: 100%;
+  word-break: break-all;
+  font-size: 14px;
+}
+
+.card-body table tbody tr {
+  display: grid;
+  grid-template-columns: 75px repeat(7, 1fr);
+}
+
+.card-body table tbody tr td {
+  text-align: center;
+  border: 1px solid black;
+  padding-block: 10px;
+  padding-inline: 10px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.card-body table tbody tr th {
+  border: 1px solid black;
+  padding-block: 10px;
+}
+
+.card table tbody tr th:nth-child(6),
+.card table tbody tr th:nth-child(2) {
+  min-width: 140px;
+}
+
+.card table tbody tr th:nth-child(3),
+.card table tbody tr th:nth-child(4) {
+  min-width: 80px;
+}
+
+.card table tbody tr td:nth-child(3),
+.card table tbody tr td:nth-child(4) {
+  min-width: 80px;
+}
+
+.card table tbody tr th:nth-child(5),
+.card table tbody tr th:nth-child(8) {
+  min-width: 200px;
+}
+
+.card table tbody tr td:nth-child(5),
+.card table tbody tr td:nth-child(8) {
+  min-width: 200px;
+  word-break: keep-all;
+}
+
+.card table tbody tr th:nth-child(7) {
+  min-width: 80px;
+}
+
+.card table tbody tr td:nth-child(7) {
+  min-width: 80px;
+}
+
+.card table tbody tr td:nth-child(6),
+.card table tbody tr td:nth-child(2) {
+  min-width: 140px;
+  word-break: keep-all;
+}
+
+/* .card-body table tbody; */

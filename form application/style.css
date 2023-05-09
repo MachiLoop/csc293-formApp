@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding-block: 32px;
+  min-height: 100vh;
+  /* width: 100vw; */
+  background: linear-gradient(to right, #90ee90, #9198e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  /* flex-wrap: wrap; */
+}
+
+.wrapper h1 {
+  text-transform: capitalize;
+}
+
+.passport {
+  width: 160px;
+  aspect-ratio: 1;
+  align-self: center;
+}
+
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-block: 36px;
+  padding-inline: 36px;
+  border-radius: 10px;
+}
+
+form div {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+}
+
+form .field label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form .field div {
+  display: flex;
+  flex-direction: column;
+}
+
+form .field div input {
+  padding: 6px;
+}
+
+form .field div input:active {
+  border: 1px solid lightgreen;
+}
+
+form textarea {
+  padding-block: 8px;
+  padding-inline: 8px;
+  resize: none;
+}
+
+form div div.radio ul {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+form div div.radio li {
+  list-style-type: none;
+}
+
+form button {
+  padding-block: 8px;
+  background-color: #90ee90;
+  border: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.warning {
+  color: red;
+  float: right;
+  display: none;
+}
+
+@media (max-width: 640px) {
+  form {
+    gap: 20px;
+  }
+
+  form div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
